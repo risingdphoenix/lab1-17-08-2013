@@ -1,5 +1,7 @@
 package oop.basic.model;
 
+import oop.basic.R;
+
 /**
  * Created by USER on 9/8/2556.
  */
@@ -33,6 +35,11 @@ public class Novice extends BaseClass {
         int bonusB = lvl / 10;
         int bonusC = lvl / 20;
         return lvl + bonusA + bonusB + bonusC;
+    }
+
+    @Override
+    final protected int getClassPicture() {
+        return R.drawable.novice;
     }
 
     @Override

@@ -1,5 +1,7 @@
 package oop.basic.model;
 
+import oop.basic.R;
+
 /**
  * Created by USER on 9/8/2556.
  */
@@ -29,6 +31,11 @@ public class Warrior extends BaseClass {
     protected int getIntelligent(int lvl) {
         int bonusA = lvl / 5;
         return lvl / 2 + bonusA;
+    }
+
+    @Override
+    final protected int getClassPicture() {
+        return R.drawable.warrior;
     }
 
     @Override

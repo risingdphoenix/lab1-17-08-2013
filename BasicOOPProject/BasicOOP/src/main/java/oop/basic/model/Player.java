@@ -33,8 +33,18 @@ public class Player {
         return mClass.getClassName();
     }
 
-    /* TODO: create method getName */
+    final public int getClassPicture() {
+        return mClass.getClassPicture();
+    }
 
+    /* TODO: create method getName */
+    final public String getName() {
+        return mName;
+    }
+
+    final public int getLevel() {
+        return mLevel;
+    }
 
     final public String getStatistic() {
         return "You have changed to " + mClass.getClassName() + " " + mClass.getClassCreatedTimes() + " times\nand changed class " + mClass.getAllClassCreatedTimes() + " times in overall.";

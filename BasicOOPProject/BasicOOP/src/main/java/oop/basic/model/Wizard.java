@@ -1,5 +1,7 @@
 package oop.basic.model;
 
+import oop.basic.R;
+
 /**
  * Created by USER on 9/8/2556.
  */
@@ -29,6 +31,11 @@ public class Wizard extends BaseClass {
         int bonusB = lvl / 10;
         int bonusC = lvl / 20;
         return lvl * 2 + bonusA * 2 + bonusB * 3 + bonusC * 5;
+    }
+
+    @Override
+    final protected int getClassPicture() {
+        return R.drawable.wizard;
     }
 
     @Override

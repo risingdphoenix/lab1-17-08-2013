@@ -27,5 +27,5 @@ public abstract class BaseClass implements GetCreatedTimes {
     abstract protected int getIntelligent(int lvl);
 
     /* TODO: create method get class picture id */
-
+    abstract protected int getClassPicture();
 }

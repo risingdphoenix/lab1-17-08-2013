@@ -44,7 +44,11 @@ public class MainActivity extends Activity implements View.OnClickListener, Adap
         mResetBtn = (Button) findViewById(R.id.reset);
         mChangeClass = (Spinner) findViewById(R.id.spinner);
         /* TODO: assign more views */
-
+        mAvatar = (ImageView) findViewById(R.id.avatar);
+        mNameTxt = (TextView) findViewById(R.id.name);
+        mLevelTxt = (TextView) findViewById(R.id.level);
+        mAgiTxt = (TextView) findViewById(R.id.agi);
+        mIntTxt = (TextView) findViewById(R.id.intel);
 
         // declare object
         mPlayer = new Player("RisingPhoenix");
@@ -71,7 +75,11 @@ public class MainActivity extends Activity implements View.OnClickListener, Adap
         mClassTxt.setText(mPlayer.getClassName());
         mStrTxt.setText(mPlayer.getStrength() + "");
         /* TODO: update more information */
-
+        mAvatar.setImageResource(mPlayer.getClassPicture());
+        mNameTxt.setText(mPlayer.getName());
+        mLevelTxt.setText(mPlayer.getLevel() + "");
+        mAgiTxt.setText(mPlayer.getAgility() + "");
+        mIntTxt.setText(mPlayer.getIntelligent() + "");
     }
 
     @Override
